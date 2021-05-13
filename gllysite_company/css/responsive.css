@@ -12,7 +12,7 @@
   .content .contList>li:nth-child(6){order:1}
   .content .contList>li:nth-child(7){}
   .content .contList>li:nth-child(8){}
-  .content .contList>li:nth-child(9){}
+  .content .contList>li:nth-child(9){} 
   .content .contList>li:nth-child(10){position: static;}
   .content .contList>li:nth-child(11){position: static;}
 }

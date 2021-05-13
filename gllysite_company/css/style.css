@@ -3,18 +3,27 @@
 /*header*/
 #headerTop {
     width: 1920px;
-    position: fixed;
+    position:relative;
+    margin-bottom:20px;
+    margin-top: 20px;
     z-index: 9999;
-    left: 30%;
+    left: 25%; 
     transform: translateX(-50%);
-    top: 50px;
 }
-
+ 
+/*
 #headerTop img {
     float: left;
     width:50px;
     line-height: 20px;
 }
+*/
+
+#headerTop .logo img {
+    position: relative;
+    float: left;
+    width:50px;
+    line-height: 30px;}
 
 #main_menu {
     float: right;
@@ -28,12 +37,12 @@
     display: block;
     padding: 0 20px;
     line-height: 50px;
-    color: aquamarine;
+    color:#404040;
     font-weight: bold;
 }
 
 #main_menu li:hover {
-    background: #c3828d;
+    background:#fff;
 }
 
 #headerTop .toggleMenu {
@@ -67,6 +76,7 @@
 }
 
 
+
 /*slider*/
 .sliderWrap .bx-wrapper {
     -moz-box-shadow: none;
@@ -95,7 +105,7 @@
 }
 
 .sliderWrap li.slider2st {
-    background-image: url(../images/sliderpic0.jpg);
+    background-image: url(../images/sliderpic.jpg);
 }
 
 /*글자의배치를 놓으려고. 퍼센트로사용 top값*/
