@@ -2,13 +2,12 @@
 
 /*header*/
 #headerTop {
-    width: 1920px;
-    position:relative;
-    margin-bottom:20px;
-    margin-top: 20px;
+    width: 1240px;
+    position: fixed;
     z-index: 9999;
-    left: 25%; 
+    left: 50%;
     transform: translateX(-50%);
+    top: 20px;
 }
  
 /*
@@ -19,11 +18,10 @@
 }
 */
 
-#headerTop .logo img {
-    position: relative;
+#headerTop h1.logo {
     float: left;
     width:50px;
-    line-height: 30px;}
+    line-height:50px;}
 
 #main_menu {
     float: right;
