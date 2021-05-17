@@ -2,7 +2,7 @@
 
 /*header*/
 #headerTop {
-    width: 1920px;
+
     position: fixed;
     z-index: 9999;
     left: 50%;
@@ -10,23 +10,29 @@
     top: 20px;
 }
  
-/*
-#headerTop img {
-    float: left;
-    width:50px;
+
+ #headerTop .logo {
+    margin:20px;
+    float:left;
+    width:100px;
     line-height: 20px;
+    cursor: pointer;
+     
 }
+
+/*
+
+#headerTop h1 .logo {
+    float: left;
+    width:100%;
+    line-height:50px;}
 */
 
-#headerTop h1.logo {
-    font-family: sans-serif;
-    float: left;
-    width:50px;
-    line-height:50px;}
-
+/*
 #main_menu {
-    float: right;
+    .float:right;
 }
+*/
 
 #main_menu li {
     float: left;
@@ -126,7 +132,7 @@
 }
 
 .content .contList {
-    width: 1920px;
+    width:1420px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +193,7 @@
     width: 50%;
     right: 0;
     bottom: 0;
-}
+}    
 
 
 
@@ -201,7 +207,7 @@
 }
 
 .container .section {
-    width: 1920px;
+    width: 1420px;
     margin: 0 auto;
 }
 
