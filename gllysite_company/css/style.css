@@ -20,19 +20,12 @@
      
 }
 
-/*
-
-#headerTop h1 .logo {
+/*#headerTop h1 .logo {
     float: left;
     width:100%;
-    line-height:50px;}
-*/
+    line-height:50px;}*/
 
-/*
-#main_menu {
-    .float:right;
-}
-*/
+/*#main_menu {.float:right; }*/
 
 #main_menu li {
     float: left;
