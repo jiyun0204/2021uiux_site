@@ -4,23 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>gllycompany</title>
+  <title>::: gllycompany :::</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="colorbox.css">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
   <script src="js/script.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+				touchEnabled:false
+			});
+		});
+	</script>
+  <script>
+         $(document).ready(function(){
+             $(".modal").colorbox({rel:"modal"});
+             $(".youtube").colorbox({
+                   iframe:true,
+                 innerWidth:700,
+                 innerHeight:393.75
+             })
+         });
+         </script>
+         <script>
+		$(document).ready(function(){
+			/*$(".toggleMenu").on("click",function(){});*/
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({right:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({right:"-100%"},300);
+				}
+			});
+
+
+			$(window).resize(function(){
+				var wSize = $(window).width();
+				console.log(wSize);
+				if(wSize > 960){
+					$("#header_top").find(".toggleMenu").removeClass("change");
+				}else{
+					$("#header_top").find(".toggleMenu").removeClass("change");
+					$("#main_menu").css({right:"-100%"});
+				}
+			});
+			var wSize = $(window).width();
+			console.log(wSize);
+			if(wSize < 960){
+				$(".contest2th").removeClass("wow fadeIn").css({"animation-delay":0,"animation-name":"none"}).attr("data-wow-delay","0s");
+				$(".contest3th").removeClass("wow fadeIn").css({"animation-delay":0,"animation-name":"none"}).attr("data-wow-delay","0s");
+				$(".contest4th").removeClass("wow fadeIn").css({"animation-delay":0,"animation-name":"none"}).attr("data-wow-delay","0s");
+				$(".contest5th").removeClass("wow fadeIn").css({"animation-delay":0,"animation-name":"none"}).attr("data-wow-delay","0s");
+
+			}
+		});
+	</script>
+
 </head>
 <body>
-  <header class="header">  <!-- 100% -->
-    <div class="headerWrap "> <!-- 1240 -->
-<div class="logo clearfix">
-  <img src="images/aralogo.png" alt="">
-
-      <ul>
+  <header class="header">   <!-- 100% -->
+    <div class="headerWrap clearfix"> <!-- 1240 -->
+      <h1><a href="#"><img src="images/aralogo.png.png" alt=""></a></h1>
+      	<nav class="main_menu">
+      <ul class="clearfix">
         <li><a href="#">ARTIST</a></li>
         <li><a href="#">EXHIBITIONS</a></li>
         <li><a href="#">VIEWING ROOM</a></li>
@@ -30,95 +89,221 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
+    </nav>
+  </div>
   <div class="ticon">
-<ul clearfix>
-  <li><img src="images/search.png" alt=""></li>
+<ul class="clearfix">
+  <li class="ml10"><img src="images/search.png" alt=""></li>
   <li><img src="images/shbag.png" alt=""></li>
 </ul>
   </div>
+  <div class="toggleMenu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </div>
-    </div>
-    <div class="sliderWrap">
-             <!--      //slider-->
-             <ul class="slider">
-                 <li class="slider1st">
-                     <!--   1200안에서 글자를 배치해줘야.. w:100%슬라이드의도-->
-                     <!--          img삭제 -> 배경으로..-->
-                     <!--           <img src="images/mainimg01.jpg" alt="">-->
-                     <div class="slider_txt">
-                         <h3>13번째 망설임</h3>
-                         <p>The 13th Hesitation</p>
-                     </div>
-                 </li>
-                 <li class="slider2st">
-                     <!--           <img src="images/mainimg02.jpg" alt="">-->
-                     <div class="slider_txt">
-                         <h3>13번째 망설임</h3>
-                         <p>The 13th Hesitation</p>
-                     </div>
-                 </li>
-             </ul>
-         </div>
-     </header>
+  </div>
+  <div class="sliderWrap">
+              <!--      //slider-->
+              <ul class="slider">
+                  <li class="slider1st">
+                      <!--   1200안에서 글자를 배치해줘야.. w:100%슬라이드의도-->
+                      <!--          img삭제 -> 배경으로..-->
+                      <!--           <img src="images/mainimg01.jpg" alt="">-->
+                      <div class="slider_txt">
+                          <h3>13번째 망설임</h3>
+                          <p>The 13th Hesitation</p>
+                      </div>
+                  </li>
+                  <li class="slider2st">
+                      <!--           <img src="images/mainimg02.jpg" alt="">-->
+                      <div class="slider_txt">
+                          <h3>13번째 망설임</h3>
+                          <p>The 13th Hesitation</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+  <div class="content">
+    <ul class="clearfix">
+      <li class="content1st">
+        <img src="images/월간북신청하러가기.jpg" alt="머드란?">
+      </li>
+      <li class="content2nd">
+        <img src="images/content_img02.png" alt="머드란?" class="bgImg">
+        <a href="information.html">
+            <p>자세히 보기</p>
+            <img src="images/search_icon.png" alt="자세히보기">
+          </a>
+      </li>
+      <li class="content3th">
+        <a href="news.html">
+          <h3>공지사항</h3>
+          <p>2020 설 연휴를 맞이하여<br>우리 지역 특산품인<br>보령머드화장품을<br>특별 할인 판매하고...</p>
+        </a>
+        <img src="images/top_area3.png" alt="공지사항 아이콘">
+      </li>
+      <li class="content3th_1">
+        <a href="production.html" class="link">
+          <p>머드화장품</p>
+        </a>
+        <a href="production.html">
+        <img src="images/top_area1_1.png" alt="">
+        </a>
+      </li>
+      <li class="content4th">
+        <a href="production.html">
+        <img src="images/content_img03.png" alt="설연휴행사">
+        </a>
+      </li>
+      <li class="content5th">
+        <img src="images/content_img04.png" alt="머드화장품 베스트상품">
+        <img src="images/arrow.gif" alt="화살표" class="arrow">
+      </li>
+      <li class="content6th">
+        <img src="images/content_img05.png" alt="머드화장품">
+        <a href="make-up.html">
+          <img src="images/product_logo.png" alt="생산과정 보러가기">
+        </a>
+      </li>
+      <li class="content7th">
+        <a href="production.html" class="link">
+          <p>머드화장품</p>
+        </a>
+        <a href="production.html">
+        <img src="images/top_area1_1.png" alt="">
+        </a>
+      </li>
+      <li class="content8th">
+        <img src="images/content_img06.png" alt="" class="">
+        <a href="https://www.youtube.com/embed/0ixpCfHiEaw" class="youtube">
+          <img src="images/youtube.png" alt="유튜브 재생버튼" class="block">
+          <img src="images/youtube(1).png" alt="유튜브 재생버튼" class="none">
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
 
-     <div class="content">
-         <ul class="contList">
-             <li>1</li>
-             <li>2</li>
-             <li>3</li>
-             <li>4</li>
-             <li>5</li>
-             <li>6</li>
-             <li>7</li>
-             <li>8</li>
-             <li>9</li>
-             <li>10</li>
-             <li>11</li>
-         </ul>
-     </div>
-     <div class="container">
-         <!-- w100% -->
-         <div class="section">
-             <!-- 1240 -->
-             <h4>비젼</h4>
-             <p>CONTACT</p>
-             <ul class="clearfix">
- <!--           해당 홈페이지이동 온클릭...이러것들..-->
-                 <li onclick="'홈페이지주소'">
-                     <div class="card">
-                         <!--             이미지크기 동일하게만들어줘요. 영역잡아줘서...-->
-                         <img src="images/place01.png" alt="">
-                         <div class="card_body">
-                             <h3>서울</h3>
-                             <p>ARARIO GALLERY SEOUL</p>
-                         </div>
-                     </div>
-                 </li>
-                 <li>
-                     <div class="card">
-                         <img src="images/place02.png" alt="">
-                         <div class="card_body">
-                             <h3>천안</h3>
-                             <p>ARARIO GALLERY CHEONAN</p>
-                         </div>
-                     </div>
-                 </li>
-                 <li>
-                     <div class="card">
-                         <img src="images/place03.png" alt="">
-                         <div class="card_body">
-                             <h3>상해</h3>
-                             <p>ARARIO GALLERY SHANGHAI</p>
-                         </div>
-                     </div>
-                 </li>
-             </ul>
-         </div> <!-- section -->
-     </div> <!-- container -->
-     <footer>
-     COPYRIGHT ARARIO GALLERY
-     SITE BY ARTLOGIC
-     INFO@ARARIOGALLERY.COM
-     </footer>
+<div class="container">
+  <div class="section">
+    <h4>재단소개</h4>
+    <p>머드축제연혁</p>
+    <ul class="vision">
+      <li>
+        <a href="#">
+          <div class="card">
+            <a href="history.html">
+            <img src="images/boryeongCity.png" alt="보령시티" class="boryeongCity">
+            </a>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="history.html">
+          <div class="card">
+            <img src="images/1990.png" alt="1990" class="year">
+            <p>자세히보기 ></p>
+          </div>
+          <img src="images/1990_01.png" alt="기쁨_머드캐릭터" class="character">
+        </a>
+      </li>
+      <li>
+        <a href="history.html">
+          <div class="card">
+            <img src="images/2000.png" alt="2000" class="year w300 w225">
+            <p>자세히보기 ></p>
+          </div>
+          <img src="images/2000_01.png" alt="기쁨2_머드캐릭터" class="character">
+        </a>
+      </li>
+      <li>
+        <a href="history.html">
+          <div class="card">
+            <img src="images/2010.png" alt="2010" class="year w275 w200">
+            <p>자세히보기 ></p>
+          </div>
+          <img src="images/2010_01.png" alt="머드팩_머드캐릭터" class="character">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="contest">
+  <ul class="clearfix">
+    <li class="contest1st clearfix">
+        <div class="contest_top">
+          <img src="images/simboll.png" alt="심볼마크">
+          <h2>사진자료 /<br>사진공모전</h2>
+        </div>
+        <div class="contest_bottom">
+          <h4>
+          <span>보령 머드축제</span>의 자료실입니다.<br>다양한 현장사진을 확인해보세요.
+          </h4>
+          <a href="data.html"><p>더 많은 사진 보러가기 ></p></a>
+          <img src="images/top_area2.png" alt="콘테스트 머피캐릭터" class="animated tada">
+        </div>
+    </li>
+    <li class="contest2nd wow fadeIn">
+      <a href="#">
+        <img src="images/contest_01.png" alt="콘테스트 사진 1" class="w360">
+      </a>
+    </li>
+    <li class="contest3th wow fadeIn" data-wow-delay="0.3s">
+      <a href="#">
+        <img src="images/contest_02.png" alt="콘테스트 사진 2" class="w360">
+      </a>
+    </li>
+    <li class="contest4th wow fadeIn" data-wow-delay="0.6s">
+      <a href="#">
+        <img src="images/contest_03.png" alt="콘테스트 사진 3" class="w360">
+      </a>
+    </li>
+    <li class="contest5th wow fadeIn" data-wow-delay="0.9s">
+      <a href="#">
+        <img src="images/contest_04.png" alt="콘테스트 사진 4" class="w360">
+      </a>
+    </li>
+    <li class="contest6th wow fadeIn" data-wow-delay="1.2s">
+      <a href="#">
+        <img src="images/contest_05.png" alt="콘테스트 사진 5">
+      </a>
+    </li>
+    <li class="contest7th wow fadeIn" data-wow-delay="1.5s">
+      <a href="#">
+        <img src="images/contest_06.png" alt="콘테스트 사진 6">
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="notice">
+  <ul class="cearfix">
+    <li><a href="#"><img src="images/notice_01.png" alt=""></a></li>
+    <li><a href="#"><img src="images/notice_02.png" alt=""></a></li>
+  </ul>
+</div>
+
+
+
+<footer id="footerWrap">
+  <div class="footer">
+    <ul class="crearfix">
+      <li class="footer_logo">
+      <a href="index.html">
+      <img src="images/hd_logo_Main.png" alt="">
+      </a>
+      </li>
+      <li class="footer_text">
+        <div class="footer_txt clearfix">
+          <p>충청남도 보령시 대해로 897-15(신흑동 2267-3) 보령축제관광재단 전화번호 : 041-930-0891 <br>통역서비스 English 041-930-0891, Chinese 010-2031-2270, Japanese 010-2888-3471</p>
+          <p>COPYRIGHT ©보령축제관광재단 ALL RIGHTS RESERVED.</p>
+          <img src="images/ft_banner1.png" alt="">
+          <img src="images/ft_banner2.png" alt="">
+          <img src="images/ft_banner3.png" alt="">
+        </div>
+      </li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>
