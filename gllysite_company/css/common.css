@@ -1,0 +1,19 @@
+.wrap {
+  width: 1240px;
+  margin:0 auto;
+}
+.container {
+  display:flex;
+  justify-content:space-between;
+
+  align-items:center;
+}
+
+.grid {display:grid}
+
+/*header */
+.header {height:180px;}
+.header ul {width:795px;}
+.ticon ul {width:fit-content}
+.ticon li {margin:0 5px; }
+
