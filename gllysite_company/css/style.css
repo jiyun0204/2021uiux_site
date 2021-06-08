@@ -1,142 +1,115 @@
 @charset "UTF-8";
 
 /*index */
-
-
 #mslide {
-    height: 1755px;
-    position: relative;
-    margin-bottom: 68px;
-}
-
-.slider {
-    height: 1135px
-}
-
-
-#mbanner {
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%)
+  position: relative;
+  margin-bottom: 68px;
 }
 
 #mbanner ul {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        'a b c d'
-        'e f f f'
-        'e g h h';
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'a b c d'
+    'e f f f'
+    'e g h h';
 }
 
-
 #mbanner ul li {
-    width: 100%;
-    height: 310px
+  width: 100%;
+  height: 310px
 }
 
 #mbanner ul li img {
-    width: 100%
+  width: 100%
 }
 
 .slider li {
-    position: relative;
-    height: 100%
+  position: relative;
 }
 
 .slider li img {
-    height: 100%
+  width: 100%
 }
 
-
 .slider_txt {
-    position: absolute;
-    width: 1240px;
-    left: 50%;
-    bottom: 20%;
-    transform: translateX(-50%);
-    z-index: 3
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  z-index: 3
 }
 
 .content1st {
-    grid-area: a
+  grid-area: a
 }
 
 .content2nd {
-    grid-area: b
+  grid-area: b
 }
 
 .content3th {
-    grid-area: c
+  grid-area: c
 }
 
 .content4th {
-    grid-area: d
+  grid-area: d
 }
 
 .content5th {
-    grid-area: e
+  grid-area: e
 }
 
 .content6th {
-    grid-area: f
+  grid-area: f
 }
 
 .content7th {
-    grid-area: g
+  grid-area: g
 }
 
 .content8th {
-    grid-area: h
+  grid-area: h
 }
-
 
 /*contact*/
 #contact {
-    background-image: url(../images/plcbgpic.jpg);
-    /*    background:linear-gradient(180deg, rgba(249, 240, 157, 0.77) 20.29%, rgba(225, 255, 187, 0) 129.86%);*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 735px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 45px;
-    margin-bottom: 70px;
-}
-
-#contact:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(249, 240, 157, 0.77) 20.29%, rgba(225, 255, 187, 0) 129.86%);
-    z-index: 0;
-}
-
-#contact .section {
-    z-index: 3;
-    position: absolute;
+  background: linear-gradient(180deg, rgba(249, 240, 157, 0.77) 20.29%, rgba(225, 255, 187, 0) 129.86%), url(../images/plcbgpic.jpg);
+  /*    background:linear-gradient(180deg, rgba(249, 240, 157, 0.77) 20.29%, rgba(225, 255, 187, 0) 129.86%);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 735px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 45px;
+  margin-bottom: 70px;
 }
 
 #contact h4 {
-    font-size: 45px;
-    margin-bottom: 102px;
-
+  font-size: 45px;
+  margin-bottom: 102px;
 }
 
 .txtarea {
-    margin-top: 82px;
-    font-size: 30px;
-    width: 320px;
-    color:#fff;
+  margin-top: 82px;
+  font-size: 30px;
+  width: 320px;
+  color: #fff;
 }
 
-.contest ul {grid-template-columns:repeat( 4, 1fr)}
+.contest ul {
+  grid-template-columns: repeat(4, 1fr)
+}
 
-.contest ul li {height: 312px;}
+.contest ul li {
+  height: 310px;
+}
+
+.contest ul li:nth-child(1), .contest ul li:nth-child(3), .contest ul li:nth-child(6), .contest ul li:nth-child(8) {
+  background: #C4C4C4;
+}
+
+.contest ul li img {
+  width: 100%;
+}

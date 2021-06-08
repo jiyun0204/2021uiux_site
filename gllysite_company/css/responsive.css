@@ -1,1 +1,11 @@
 @charset "UTF-8";
+
+@media (max-width: 768px) {
+  .wrap {
+    min-width: 300px;
+  }
+  
+  .header {
+    padding: 10px !important;
+  }
+}

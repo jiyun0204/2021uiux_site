@@ -1,10 +1,10 @@
 .wrap {
-  width: 1240px;
+  width: 88%;
+  max-width: 1240px;
   margin:0 auto;
 }
 .container {
   display:flex;
-  justify-content:space-between;
 
   align-items:center;
 }
@@ -12,7 +12,48 @@
 .grid {display:grid}
 
 /*header */
-.header {height:180px;}
-.header ul {width:795px;}
+
+.header {
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+h1 {
+  width: 20%;
+  max-width: 100px;
+  min-width: 40px;
+}
+
+h1 img {
+  width: 100%;
+}
+.main_menu {
+  width: 90%;
+}
+
+.ticon .togglemenu {
+  display: none;
+}
+
+.ticon.mobile .ml10 {
+  display: none;
+}
+
+.ticon .ml10 {
+  display: block;
+}
+
+.ticon.mobile .togglemenu {
+  display: block;
+}
+
+.main_menu.mobile {
+  display: none;
+  width: 0;
+}
+
+.main_menu ul {
+  justify-content: space-around;
+}
 .ticon ul {width:fit-content}
 .ticon li {margin:0 5px; }

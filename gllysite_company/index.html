@@ -2,335 +2,269 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>::: gllycompany :::</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="colorbox.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
-    <script src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>::: gllycompany :::</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="colorbox.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
+  <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <script>
-        $(document).ready(function() {
-            $(".slider").bxSlider({
-                auto: true,
-                controls: false,
-                pager: false,
-                touchEnabled: false
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $(".modal").colorbox({
-                rel: "modal"
-            });
-            $(".youtube").colorbox({
-                iframe: true,
-                innerWidth: 700,
-                innerHeight: 393.75
-            })
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            /*$(".toggleMenu").on("click",function(){});*/
-            $(".toggleMenu").click(function() {
-                var myClass = $(this).attr("class");
-                console.log(myClass);
-                if (myClass == "toggleMenu") {
-                    $(".toggleMenu").addClass("change");
-                    $("#main_menu").stop().animate({
-                        right: 0
-                    }, 300);
-                } else {
-                    $(".toggleMenu").removeClass("change");
-                    $("#main_menu").stop().animate({
-                        right: "-100%"
-                    }, 300);
-                }
-            });
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-            $(window).resize(function() {
-                var wSize = $(window).width();
-                console.log(wSize);
-                if (wSize > 960) {
-                    $("#header_top").find(".toggleMenu").removeClass("change");
-                } else {
-                    $("#header_top").find(".toggleMenu").removeClass("change");
-                    $("#main_menu").css({
-                        right: "-100%"
-                    });
-                }
-            });
-            var wSize = $(window).width();
-            console.log(wSize);
-            if (wSize < 960) {
-                $(".contest2th").removeClass("wow fadeIn").css({
-                    "animation-delay": 0,
-                    "animation-name": "none"
-                }).attr("data-wow-delay", "0s");
-                $(".contest3th").removeClass("wow fadeIn").css({
-                    "animation-delay": 0,
-                    "animation-name": "none"
-                }).attr("data-wow-delay", "0s");
-                $(".contest4th").removeClass("wow fadeIn").css({
-                    "animation-delay": 0,
-                    "animation-name": "none"
-                }).attr("data-wow-delay", "0s");
-                $(".contest5th").removeClass("wow fadeIn").css({
-                    "animation-delay": 0,
-                    "animation-name": "none"
-                }).attr("data-wow-delay", "0s");
-
-            }
-        });
-    </script>
-
+  <script>
+    $(document).ready(function() {
+      $(".modal").colorbox({
+        rel: "modal"
+      });
+      $(".youtube").colorbox({
+        iframe: true,
+        innerWidth: 700,
+        innerHeight: 393.75
+      })
+    });
+  </script>
 </head>
 
 <body>
-    <header class="container header">
-        <!-- 100% -->
-        <div class="container wrap clearfix">
-            <!-- 1240 -->
-            <h1><a href="#"><img src="images/aralogo.png" alt=""></a></h1>
-            <nav class="main_menu">
-                <ul class="container clearfix">
-                    <li><a href="#">ARTIST</a></li>
-                    <li><a href="#">EXHIBITIONS</a></li>
-                    <li><a href="#">VIEWING ROOM</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">PRESS</a></li>
-                    <li><a href="#">STORE</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="ticon">
-                <ul class="container clearfix">
-                    <li class="ml10"><img src="images/search.png" alt=""></li>
-                    <li><img src="images/shbag.png" alt=""></li>
-                </ul>
+  <header class="container">
+    <!-- 100% -->
+    <div class="header container wrap">
+      <!-- 1240 -->
+      <h1><a href="#" class="container"><img src="images/aralogo.png" alt=""></a></h1>
+      <nav class="main_menu">
+        <ul class="container clearfix">
+          <li><a href="#">ARTIST</a></li>
+          <li><a href="#">EXHIBITIONS</a></li>
+          <li><a href="#">VIEWING ROOM</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">PRESS</a></li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="ticon">
+        <ul class="container">
+          <li class="ml10"><img src="images/search.png" alt=""></li>
+          <li><img src="images/shbag.png" alt=""></li>
+          <li class="togglemenu xi-bars"></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="mslide">
+      <ul class="slider">
+        <li class="slider1st">
+          <img src="images/sliderpic.jpg" alt="slide1">
+          <div class="slider_txt wrap">
+            <h3>13번째 망설임</h3>
+            <p>The 13th Hesitation</p>
+          </div>
+        </li>
+        <li class="slider2st">
+          <!--           <img src="images/mainimg02.jpg" alt="">-->
+          <div class="slider_txt wrap">
+            <h3>13번째 망설임</h3>
+            <p>The 13th Hesitation</p>
+          </div>
+        </li>
+      </ul>
+      <section class="content wrap" id="mbanner">
+        <ul class="grid clearfix">
+          <li class="content1st">
+            <img src="images/월간북신청하러가기.jpg" alt="월간북신청하러가기">
+          </li>
+          <li class="content2nd">
+            <img src="images/main2.jpg" alt="아라리오소개" class="bgImg">
+            <a href="#">
+              <p>자세히 보기</p>
+            </a>
+          </li>
+          <li class="content3th">
+            <a href="news.html"></a>
+            <img src="images/top_area3.png" alt="">
+          </li>
+          <li class="content4th">
+            <a href="production.html">
+              <img src="images/mainpic1.jpg" alt="">
+            </a>
+          </li>
+          <li class="content5th">
+            <img src="images/mn1.jpg" alt="">
+          </li>
+          <li class="content6th">
+            <img src="images/content_img05.png" alt="머드화장품">
+            <a href="make-up.html">
+              <img src="images/product_logo.png" alt="생산과정 보러가기">
+            </a>
+          </li>
+          <li class="content7th">
+            <a href="production.html" class="link">
+              <p>머드화장품</p>
+            </a>
+            <a href="production.html">
+              <img src="images/top_area1_1.png" alt="">
+            </a>
+          </li>
+          <li class="content8th">
+            <img src="images/content_img06.png" alt="" class="">
+            <a href="https://www.youtube.com/embed/0ixpCfHiEaw" class="youtube">
+              <img src="images/youtube.png" alt="유튜브 재생버튼" class="block">
+              <img src="images/youtube(1).png" alt="유튜브 재생버튼" class="none">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="contact">
+      <div class="section wrap">
+        <img src="images/mulmp.png" alt="">
+        <h4>CONTACT</h4>
+        <ul class="container">
+          <li>
+            <img src="images/place01.png" alt="서울장소">
+            <div class="txtarea">
+              <p>서울</p>
+              <p>ARARIO GALLERY SEOUL</p>
             </div>
-        </div>
-        <div class="toggleMenu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-
-    </header>
-    <main>
-        <section id="mslide">
-            <ul class="slider">
-
-                <li class="slider1st">
-                    <img src="images/sliderpic.jpg" alt="slide1">
-                    <div class="slider_txt">
-                        <h3>13번째 망설임</h3>
-                        <p>The 13th Hesitation</p>
-                    </div>
-                </li>
-                <li class="slider2st">
-                    <!--           <img src="images/mainimg02.jpg" alt="">-->
-                    <div class="slider_txt">
-                        <h3>13번째 망설임</h3>
-                        <p>The 13th Hesitation</p>
-                    </div>
-                </li>
-            </ul>
-            <section class="content wrap" id="mbanner">
-                <ul class="grid clearfix">
-                    <li class="content1st">
-                        <img src="images/월간북신청하러가기.jpg" alt="월간북신청하러가기">
-                    </li>
-                    <li class="content2nd">
-                        <img src="images/main2.jpg" alt="아라리오소개" class="bgImg">
-                        <a href="#">
-                            <p>자세히 보기</p>
-                        </a>
-                    </li>
-                    <li class="content3th">
-                        <a href="news.html"></a>
-                        <img src="images/top_area3.png" alt="">
-                    </li>
-                    <li class="content4th">
-                        <a href="production.html">
-                            <img src="images/mainpic1.jpg" alt="">
-                        </a>
-                    </li>
-                    <li class="content5th">
-                        <img src="images/mn1.jpg" alt="">
-                    </li>
-                    <li class="content6th">
-                        <img src="images/content_img05.png" alt="머드화장품">
-                        <a href="make-up.html">
-                            <img src="images/product_logo.png" alt="생산과정 보러가기">
-                        </a>
-                    </li>
-                    <li class="content7th">
-                        <a href="production.html" class="link">
-                            <p>머드화장품</p>
-                        </a>
-                        <a href="production.html">
-                            <img src="images/top_area1_1.png" alt="">
-                        </a>
-                    </li>
-                    <li class="content8th">
-                        <img src="images/content_img06.png" alt="" class="">
-                        <a href="https://www.youtube.com/embed/0ixpCfHiEaw" class="youtube">
-                            <img src="images/youtube.png" alt="유튜브 재생버튼" class="block">
-                            <img src="images/youtube(1).png" alt="유튜브 재생버튼" class="none">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </section>
-
-        <section id="contact">
-            <div class="section wrap">
-                <img src="images/mulmp.png" alt="">
-                <h4>CONTACT</h4>
-                <ul class="container">
-                    <li>
-                        <img src="images/place01.png" alt="서울장소">
-                        <div class="txtarea">
-                            <p>서울</p>
-                            <p>ARARIO GALLERY SEOUL</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/place01.png" alt="천안장소">
-                        <div class="txtarea">
-                            <p>천안</p>
-                            <p>ARARIO GALLERY CHEONAN</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/place01.png" alt="상해장소">
-                        <div class="txtarea">
-                            <p>상해</p>
-                            <p>ARARIO GALLERY SHANGHAI</p>
-                        </div>
-                    </li>
-                </ul>
+          </li>
+          <li>
+            <img src="images/place01.png" alt="천안장소">
+            <div class="txtarea">
+              <p>천안</p>
+              <p>ARARIO GALLERY CHEONAN</p>
             </div>
-        </section>
-        <div class="contest">
-            <ul class="grid clearfix">
-                <li class="contest1st clearfix">
-                    <a href="news.html">
-                        <div class="contestxt">
-                            <strong>NEWS</strong>
-                            <img src="images/bell.png" alt="뉴스아이콘">
-                            <p>[ 전시 ] 황태규 : 시차적응 _ 카메라</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="contest2nd clearfix">
-                   <img src="images/image8.jpg" alt="종벨">
-                    <a href="news.html">
-                        <div class="contestxt">
-                        </div>
-                    </a>
-                </li>
-                <li class="contest3th clearfix">
-                    <a href="news.html">
-                        <div class="contestxt">
-                            <strong>[ 전시 ] 권오상  : 잃어버린 시간의 연대기
-                                <i>14 APRIL 2021</i></strong>
-                            <p>권오상 작가는 서울대학교미술관 기획전 “잃어버린 시간의 연대기”에 참여합니다. [잃어버린 시간의 연대기] 전은 한국 현대미술에 대한 성찰적 읽기의 일환으로ㅇㄹㅈ덜ㄴ워</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="contest4th clearfix">
-                   <img src="images/newsp2.jpg" alt="장소사진">
-                    <a href="news.html">
-                        <div class="contestxt">
+          </li>
+          <li>
+            <img src="images/place01.png" alt="상해장소">
+            <div class="txtarea">
+              <p>상해</p>
+              <p>ARARIO GALLERY SHANGHAI</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="contest">
+      <ul class="grid clearfix wrap">
+        <li class="contest1st clearfix">
+          <a href="news.html">
+            <div class="contestxt">
+              <strong>NEWS</strong>
+              <img src="images/bell.png" alt="뉴스아이콘">
+              <p>[ 전시 ] 황태규 : 시차적응 _ 카메라</p>
+            </div>
+          </a>
+        </li>
+        <li class="contest2nd clearfix">
+          <img src="images/image8.jpg" alt="종벨">
+          <a href="news.html">
+            <div class="contestxt">
+            </div>
+          </a>
+        </li>
+        <li class="contest3th clearfix">
+          <a href="news.html">
+            <div class="contestxt">
+              <strong>[ 전시 ] 권오상 : 잃어버린 시간의 연대기
+                <i>14 APRIL 2021</i></strong>
+              <p>권오상 작가는 서울대학교미술관 기획전 “잃어버린 시간의 연대기”에 참여합니다. [잃어버린 시간의 연대기] 전은 한국 현대미술에 대한 성찰적 읽기의 일환으로ㅇㄹㅈ덜ㄴ워</p>
+            </div>
+          </a>
+        </li>
+        <li class="contest4th clearfix">
+          <img src="images/newsp2.jpg" alt="장소사진">
+          <a href="news.html">
+            <div class="contestxt">
 
-                        </div>
-                    </a>
-                </li>
-                <li class="contest5th clearfix">
-                   <img src="images/newsp3.jpg" alt="노랑그림">
-                    <a href="news.html">
-                        <div class="contestxt">
+            </div>
+          </a>
+        </li>
+        <li class="contest5th clearfix">
+          <img src="images/newsp3.jpg" alt="노랑그림">
+          <a href="news.html">
+            <div class="contestxt">
 
-                        </div>
-                    </a>
-                </li>
-                <li class="contest6th clearfix">
-                    <a href="news.html">
-                        <div class="contestxt">
-                            <strong>
-                               [ 전시 ] 부지현  : A DIALOGUE WITH
-                                <i>28 APRIL 2021</i>
-                            </strong>
-                            <p>2008년 Prix WhanKi 작품 공모를 통해 환기미술관과의 인연을 이어나가고 있는 부지현 작가의 기획전이 4월 30일부터 시작됩니다. 칠흙같은 어둠 속 ‘폐선’과ㄱㄷ헉ㄷㄱㄴ</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="contest7th clearfix">
-                   <img src="images/newsp4.jpg" alt="여자">
-                    <a href="news.html">
-                        <div class="contestxt">
+            </div>
+          </a>
+        </li>
+        <li class="contest6th clearfix">
+          <a href="news.html">
+            <div class="contestxt">
+              <strong>
+                [ 전시 ] 부지현 : A DIALOGUE WITH
+                <i>28 APRIL 2021</i>
+              </strong>
+              <p>2008년 Prix WhanKi 작품 공모를 통해 환기미술관과의 인연을 이어나가고 있는 부지현 작가의 기획전이 4월 30일부터 시작됩니다. 칠흙같은 어둠 속 ‘폐선’과ㄱㄷ헉ㄷㄱㄴ</p>
+            </div>
+          </a>
+        </li>
+        <li class="contest7th clearfix">
+          <img src="images/newsp4.jpg" alt="여자">
+          <a href="news.html">
+            <div class="contestxt">
 
-                        </div>
-                    </a>
-                </li>
-                <li class="contest8th clearfix">
-                    <a href="news.html">
-                        <div class="contestxt">
-                            <strong>[ 전시 ] 김종완  : FORTUNE TELLING : 운명상담소
-                            <i>16 APRIL 2021</i>
-                            </strong>
-                            <p>진종완 작가는 일민미술관 기획전 “Fortune Telling : 운명상담소”에 참여합니다. 과학적 세계관에 비추어 볼 때 열등하고 미신이라 여겨지던 샤머니즘아녕할헝ㅎㄷㅎ겋쟏</p>
-                        </div>
-                    </a>
-                </li>
-
-
-            </ul>
-        </div>
-        <div class="notice">
-            <ul class="cearfix">
-                <li><a href="#"><img src="images/notice_01.png" alt=""></a></li>
-                <li><a href="#"><img src="images/notice_02.png" alt=""></a></li>
-            </ul>
-        </div>
-    </main>
-
+            </div>
+          </a>
+        </li>
+        <li class="contest8th clearfix">
+          <a href="news.html">
+            <div class="contestxt">
+              <strong>[ 전시 ] 김종완 : FORTUNE TELLING : 운명상담소
+                <i>16 APRIL 2021</i>
+              </strong>
+              <p>진종완 작가는 일민미술관 기획전 “Fortune Telling : 운명상담소”에 참여합니다. 과학적 세계관에 비추어 볼 때 열등하고 미신이라 여겨지던 샤머니즘아녕할헝ㅎㄷㅎ겋쟏</p>
+            </div>
+          </a>
+        </li>
 
 
-    <footer id="wrap">
-        <div class="footer">
-            <ul class="crearfix">
-                <li class="footer_logo">
-                    <a href="index.html">
-                        <img src="images/hd_logo_Main.png" alt="">
-                    </a>
-                </li>
-                <li class="footer_text">
-                    <div class="footer_txt clearfix">
-                        <p>충청남도 보령시 대해로 897-15(신흑동 2267-3) 보령축제관광재단 전화번호 : 041-930-0891 <br>통역서비스 English 041-930-0891, Chinese 010-2031-2270, Japanese 010-2888-3471</p>
-                        <p>COPYRIGHT ©보령축제관광재단 ALL RIGHTS RESERVED.</p>
-                        <img src="images/ft_banner1.png" alt="">
-                        <img src="images/ft_banner2.png" alt="">
-                        <img src="images/ft_banner3.png" alt="">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</body></html>
+      </ul>
+    </div>
+    <div class="notice">
+      <ul class="cearfix">
+        <li><a href="#"><img src="images/notice_01.png" alt=""></a></li>
+        <li><a href="#"><img src="images/notice_02.png" alt=""></a></li>
+      </ul>
+    </div>
+  </main>
+
+
+
+  <footer id="wrap">
+    <div class="footer">
+      <ul class="crearfix">
+        <li class="footer_logo">
+          <a href="index.html">
+            <img src="images/hd_logo_Main.png" alt="">
+          </a>
+        </li>
+        <li class="footer_text">
+          <div class="footer_txt clearfix">
+            <p>충청남도 보령시 대해로 897-15(신흑동 2267-3) 보령축제관광재단 전화번호 : 041-930-0891 <br>통역서비스 English 041-930-0891, Chinese 010-2031-2270, Japanese 010-2888-3471</p>
+            <p>COPYRIGHT ©보령축제관광재단 ALL RIGHTS RESERVED.</p>
+            <img src="images/ft_banner1.png" alt="">
+            <img src="images/ft_banner2.png" alt="">
+            <img src="images/ft_banner3.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
