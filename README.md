@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# 2021uiux_web
-=======
-# 2020uiux_site
+
 my portfolio site
 1. himedia https://jiyun0204.github.io/2021uiux_site/20210323_himedia
 <a href="https://jiyun0204.github.io/2021uiux_site/20210323_himedia">https://jiyun0204.github.io/2021uiux_site/20210323_himedia</a>
