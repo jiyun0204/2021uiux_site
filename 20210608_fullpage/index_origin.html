@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fullpage origin_nav bar</title>
     <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/reset.css">
-   
+
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#fullpage").fullpage({
-            menu:".topMenu",
-            anchors:['m1st','m2st','m3st','m4st'],
-            navigation:true,
-            navigationTooltips:['home','product','community','board',],
-            showActiveTooltip:true,
-            responsiveWidth:1000,    
-            afterLoad:function(anchorslink,index){
-                    console.log(anchorslink+ ', ' + index);
-                    if(index == 1){
+                menu: ".topMenu",
+                anchors: ['m1st', 'm2st', 'm3st', 'm4st'],
+                navigation: true,
+                navigationTooltips: ['home', 'product', 'community', 'board',],
+                showActiveTooltip: true,
+                responsiveWidth: 1000,
+                afterLoad: function (anchorslink, index) {
+                    console.log(anchorslink + ', ' + index);
+                    if (index == 1) {
                         $(".txt1st").addClass("end");
-                    }else{
+                    } else {
                         $(".txt1st").removeClass("end");
                     }
                 }
@@ -33,117 +34,250 @@
         })
     </script>
     <style>
-        .section{
-            background-position:center;       
+        .section {
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            }
-        .section.page1{background-image: url(images/navmh1.jpg);}
-        .section.page2{background-image: url(images/navmh2.jpg);}
-        .section.page3{background-image: url(images/navmh3.jpg);}
-        .section.page4{background-image: url(images/navmh4.jpg);}
-        #navTop {
-            position: fixed; z-index:1; background:white;
-            width: 100%;}
-            
-        
-        .navbar li {transition: 0.3s;border-bottom:5px solid transparent;}
-        .navbar li.active{border-bottom:2px solid #fff;}
-       
-        #fp-nav.right{right:10px;}
-         .fp-tooltip.right{right: 20px;}
-        
-       
-        @keyframes xScroll {
-            from{bottom:30px;}
-            to{bottom: 50px;}
         }
-        
-        .txt1st{opacity:0;transition:0.7s;transform:translateY(-300px)}
-        .txt1st h4 {color:greenyellow;}
-        .txt1st p {color:greenyellow;}
-        .txt1st.end{opacity:1;transform:translateY(0)}
+
+        .section.page1 {
+            background-image: url(images/navmh1.jpg);
+        }
+
+        .section.page2 {
+            background-image: url(images/navmh2.jpg);
+        }
+
+        .section.page3 {
+            background-image: url(images/navmh3.jpg);
+        }
+
+        .section.page4 {
+            background-image: url(images/navmh4.jpg);
+        }
+
+        #navTop {
+            position: fixed;
+            z-index: 1;
+            background: white;
+            width: 100%;
+        }
+
+
+        .navbar li {
+            transition: 0.3s;
+            border-bottom: 5px solid transparent;
+        }
+
+        .navbar li.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        #fp-nav.right {
+            right: 10px;
+        }
+
+        .fp-tooltip.right {
+            right: 20px;
+        }
+
+
+        @keyframes xScroll {
+            from {
+                bottom: 30px;
+            }
+            to {
+                bottom: 50px;
+            }
+        }
+
+        .txt1st {
+            opacity: 0;
+            transition: 0.7s;
+            transform: translateY(-300px)
+        }
+
+        .txt1st h4 {
+            color: greenyellow;
+        }
+
+        .txt1st p {
+            color: greenyellow;
+        }
+
+        .txt1st.end {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
         .scroll {
             position: relative;
-            bottom:50px;
+            bottom: 50px;
             left: 50%;
             top: 250px;
-            transform: translateX(-50%,-50%);
-            animation-name:xScroll;
+            transform: translateX(-50%, -50%);
+            animation-name: xScroll;
             animation-duration: 0.8s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
-            
+
         }
-        
-        
-/*
-          position: relative;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation-name:xScroll;
-            animation-duration: 0.8s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        
-*/
-        @media screen and (max-width:1000px){
-            .navbar li.active{border-bottom:5px solid transparent;}
+
+
+        /*
+                  position: relative;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    animation-name:xScroll;
+                    animation-duration: 0.8s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+
+        */
+        @media screen and (max-width: 1000px) {
+            .navbar li.active {
+                border-bottom: 5px solid transparent;
+            }
+        }
+
+        .fp-controlArrow.fp-next{
+            right: 150px;
+        }
+        .fp-controlArrow.fp-prev{
+            left: 150px;
+        }
+        .gnb{
+            position: relative;
+        }
+        .sp {
+            display: block;
+            background: url(images/sp.png) no-repeat 90000px 90000px;
+            position: absolute;
+            top: 0;
+            left: -50px;
+            padding-top: 50px;
+            list-style: none;
+        }
+        .gnb .depth2 {
+            width: 282px;
+            height: 194px;
+            padding: 70px 0 0 54px;
+            background-position: -200px 0;
+            box-sizing: border-box;
+            display: none;
+        }
+        .gnb .depth2 li a{
+            color: #ffffff;
+        }
+        .gnb .depth2 li{
+            text-align: left;
+        }
+        .gnb .depth2 li:nth-child(1) {
+            margin-left: 15px;
+        }
+        .gnb .depth2 li:nth-child(2) {
+            margin-left: 32px;
+        }
+        .gnb .depth2 li:nth-child(3) {
+            margin-left: 51px;
+        }
+        .gnb .depth2 li:nth-child(4) {
+            margin-left: 68px;
+        }
+        .gnb:hover .depth2{
+            display: block;
+        }
+        .nav-link{
+            z-index: 9999999;
+            position: relative;
         }
     </style>
 </head>
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark  fixed-top py-md-0">
-        <a class="navbar-brand" href="#"><img src="images/mhlogo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav topMenu ml-auto">
-            <li class="nav-item"  data-menuanchor="m1st">
-              <a class="nav-link" href="#m1st">SERVICE</a>
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top py-md-0">
+    <a class="navbar-brand" href="#"><img src="images/mhlogo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center; display: block !important;">
+        <ul class="navbar-nav topMenu" style="justify-content: center">
+            <li class="nav-item gnb" data-menuanchor="m1st" style="padding: 10px; padding-bottom: 0; margin: 0 20px;">
+                <a class="nav-link" href="#m1st">SERVICE</a>
+                <ul class="sp depth2">
+                    <li class="menu1 js-onstg" data-dest="1"><a href="#">온스테이지</a></li>
+                    <li data-dest="2" class="menu2 js-onstg"><a href="#">문화의 안과 밖</a></li>
+                    <li data-dest="3" class="menu3 js-onstg"><a href="#">한글한글아름답게</a></li>
+                    <li data-dest="4" class="menu4 js-onstg"><a href="#">헬로 아티스트</a></li>
+                </ul>
             </li>
-            <li class="nav-item" data-menuanchor="m2st">
-              <a class="nav-link" href="#m2st">NEWS</a>
+            <li class="nav-item" data-menuanchor="m2st" style="padding: 10px; padding-bottom: 0; margin: 0 20px;">
+                <a class="nav-link" href="#m2st">NEWS</a>
             </li>
-            <li class="nav-item" data-menuanchor="m3st">
-              <a class="nav-link" href="#m3st">ABOUT</a>
+            <li class="nav-item" data-menuanchor="m3st" style="padding: 10px; padding-bottom: 0; margin: 0 20px;">
+                <a class="nav-link" href="#m3st">ABOUT</a>
             </li>
-            <li class="nav-item" data-menuanchor="m4st">
+            <li class="nav-item gnb" data-menuanchor="m4st" style="padding: 10px; padding-bottom: 0; margin: 0 20px;">
                 <a class="nav-link" href="#m4st">BORAD</a>
-              </li>
-           
-          </ul>
-        </div>
-      </nav>
-    <div id="fullpage">
-        <div class="section page1" data-anchor="m1st">
-            <div class="container">
-                <div class="txt1st">
-                    <h4>대한민국의</h4>
-                    <p>젊은 창작자를 응원합니다</p>
-    <!--<a href="#" class="btn btn-primary">more</a>-->
-                </div>
+                <ul class="sp depth2">
+                    <li class="menu1 js-onstg" data-dest="1"><a href="#">온스테이지</a></li>
+                    <li data-dest="2" class="menu2 js-onstg"><a href="#">문화의 안과 밖</a></li>
+                    <li data-dest="3" class="menu3 js-onstg"><a href="#">한글한글아름답게</a></li>
+                    <li data-dest="4" class="menu4 js-onstg"><a href="#">헬로 아티스트</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="fullpage">
+    <div class="section page1" data-anchor="m1st">
+        <div class="container">
+            <div class="txt1st">
+                <h4 style="font-size: 5em; text-align: center; color: #ffffff; font-weight: bolder">대한민국의<br>
+                    젊은 <b style="color: #8CFF70">창작자를 응원</b>합니다</h4>
+                <!--<a href="#" class="btn btn-primary">more</a>-->
             </div>
-            <div class="scroll">
-                <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+        </div>
+        <div class="scroll">
+            <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+        </div>
+    </div>
+    <div class="section page2" data-anchor="m2st">2</div>
+    <div class="section page3" data-anchor="m3st">
+        <div class="slide">
+            <div>
+                <h4 style="font-size: 5em; text-align: center; color: #ffffff; font-weight: bolder">숨은 문화를 발견하여<br>
+                    <b style="color: #8CFF70">새로운 문화로 연결</b>합니다</h4>
             </div>
         </div>
-        <div class="section page2" data-anchor="m2st">2</div>
-        <div class="section page3" data-anchor="m3st">3</div>
-        <div class="section page4" data-anchor="m4st">4</div>
-        <div class="section page5 fp-auto-height py-5 bg-dark text-white" data-anchor="m5st">
-            <div class="container text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, impedit?
+        <div class="slide">
+            <div>
+<!--                color: #ffffff; background-color: rgba(12, 100, 21, .6)-->
+                <h4 style="font-size: 5em; text-align: center; color: #ffffff; font-weight: bolder">숨은 문화를 발견하여<br>
+                    <b style="color: #8CFF70">새로운 문화로 연결</b>합니다</h4>
+            </div>
+        </div>
+        <div class="slide">
+            <div>
+                <h4 style="font-size: 5em; text-align: center; color: #ffffff; font-weight: bolder">경험의 <b style="color: #8CFF70">평등이 실현</b>되는<br>
+                    사회를 꿈꿉니다.</h4>
             </div>
         </div>
     </div>
+    <div class="section page4" data-anchor="m4st">4</div>
+    <div class="section page5 fp-auto-height py-5 bg-dark text-white" data-anchor="m5st">
+        <div class="container text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, impedit?
+        </div>
+    </div>
+</div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>     
-        
-        
+
 </body>
 </html>
