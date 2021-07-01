@@ -7,8 +7,8 @@ my portfolio site
 2. college https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html
 <a href="https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html"></a>
 
-3. company arariogally-renewal https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html
-<a href="https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html">미완성 월요일</a>
+3. company arariogally-renewal 미완성 월요일 https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html
+<a href="https://jiyun0204.github.io/2021uiux_site/20210329_college/index0.html"></a>
 
 4. fullpage naver문화재단-renewal https://jiyun0204.github.io/2021uiux_site/20210608_fullpage/index_origin.html
 <a href="https://jiyun0204.github.io/2021uiux_site/20210608_fullpage/index_origin.html"></a>
@@ -16,10 +16,10 @@ my portfolio site
 5. bootstrap1 https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html
 <a href="https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html"></a>
 
-6. bootstrap2 김광석-renewal https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html
-<a href="https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html"></a>
+6. bootstrap2 김광석-renewal https://jiyun0204.github.io/2021uiux_site/bt_strap_kwangseok/index.html
+<a href="https://jiyun0204.github.io/2021uiux_site/bt_strap_kwangseok/index.html"></a>
 
-7.
+7. vue - router 미적용 
 
 
 
