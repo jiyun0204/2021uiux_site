@@ -1,184 +1,223 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-    <title>부트스트랩 101 템플릿</title>
-    <!-- 합쳐지고 최소화된 최신 CSS -->
-    <!-- CSS only -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="./css/style.css">
-      <style>
-          
-      </style>
-  </head>
-  <body>
-     <nav class="navbar navbar-expand-lg fixed-top navbar-dark " aria-label="메인 네비게이션" style="position: absolute;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./image/nav_icon.JPG"/></a>
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">대봉문화마을협의회</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">김광석 이야기</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">병천시장</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">김광석길 즐기기</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">갤러리</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">알람.소식</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q&A</font></font></a>
-            </li>
-          </ul>
-          <ul class="navbar-nav me-right mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;">오시는길</font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">사이트맵</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">관리자</font></font></a>
-            </li>
-          </ul>
+    <title>김광석 거리 페이지</title>
+
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/slick.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <img class="header_logo" src="image/nav_icon.JPG" onclick="location.href='#'">
+        <div class="header_cate_wrapper">
+            <div class="header_cate_item" onclick="location.href='#'">대봉문화마을협의회</div>
+            <div class="header_cate_item" onclick="location.href='#'">김광석길 이야기</div>
+            <div class="header_cate_item" onclick="location.href='#'">병천시장</div>
+            <div class="header_cate_item" onclick="location.href='#'">김광석길 즐기기</div>
+            <div class="header_cate_item" onclick="location.href='#'">갤러리</div>
+            <div class="header_cate_item" onclick="location.href='#'">알림∙소식</div>
+            <div class="header_cate_item" onclick="location.href='#'">Q&A</div>
         </div>
-      </div>
-    </nav>
-    <div class="main_img">
-        <p>
-            <span>제 노래가 힘겨운 삶 속에서<br> 희망을 찾으려는 이들에게<br> 비상구가 되었음 해요</span>
-            <small>
-            - 1995년 셈터 9월호 김광석 인터뷰 중에서 -
-            </small>
-        </p>
+        <div class="header_right">
+            <div class="header_right_item" onclick="location.href='#'">오시는 길</div>
+            <div class="header_right_item" onclick="location.href='#'">사이트맵</div>
+            <div class="header_right_item" onclick="location.href='#'">관리자</div>
+        </div>
     </div>
-      
-    <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-6 col-sm-7 col_box_left">
-                    <div class="row bg-secondary bg-gradient" style="padding: 20px;">
-                        <div class="col-5 ">
-                            <img src="image/img_about02.png" style="height: 400px;">
-                        </div>
-                        <div class="col-7">
-                            <h3 style="text-align: center">알림 소식</h3>
-                            <br>
-                            <b>2019 대봉문화 마을축제 공연 라인업 및 행사 안내</b>
-                            <br>
-                            <br>
-                            <p class="Light" style="color: #f8f9fa">안녕하세요? 10월25,26일 대봉문화마을 축제가 김광석길과 방천시장 일대에서 열립니다.풍선한공연과 이벤트가 준비되어있으니 많은관심 부탁드립니다.</p>
-                            <b>2019 - 10 - 11</b>
-                            <br>
-                            <br>
-                            <br>
-                            <ul style="    font-size: 1.2em;">
-                                <li>대봉문화마을 협의회 긴급 공고문</li>
-                                <li>2019 대봉문화마을 축제</li>
-                                <li>김광석길 스탬프 투하 이벤트</li>
-                            </ul>
-                        </div>
-                    </div>
+</div>
+<div id="sec_1">
+    <div id="sec_1_slider">
+        <div class="sec_1_slider_item sec_1_slider_img" style="background-image: url('image/headerslidebg.jpg')">
+            <div class="sec_1_slider_con_wrapper">
+                <div class="sec_1_slider_title">
+                    제 노래가 힘겨운 삶 속에서<br>
+                    희망을 찾으려는 이들에게<br>
+                    비상구가 되었으면 해요
                 </div>
-                <div class="col-4 col-sm-5 col_box_right" >
-                  <div class="row row-cols-1">
-                    <div class="col" style="padding: 10px 20px;">
-                        <img src="image/img_about01.jpg" height="200px;" width="100%">
-                    </div>
-                    <div class="col" style="padding: 10px 20px;">
-                        <img src="image/qnaall.png" height="200px;" width="100%">
-                    </div>
-                  </div>
+                <div class="sec_1_slider_contents">
+                    -1995년 샘터 9월호 김광석 인터뷰 중에서-
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-    </section>
-    <div class="story_img">
-        <div>
-            <h1>story</h1>
-            <p>그의 음악과 함께 김광석을 다시 만나다</p>
-        </div>
-        <div style="padding: 0px;width: 1400px;">
-            <img src="image/Vector_2.png" style="float: left">
-            <h3 style="display: inline-block;float: left;padding: 120px 80px;">그의 음악과 함께 김광석을 다시 만나다</h3>
-            <img src="image/Vector_1.png" style="float: right">
-                 
-        </div>
-    </div>
-       <div class="sub_img">
-        
-    </div>
-      <div class="footer_img">
-        
-    </div>
-      <footer class="navbar navbar-expand-lg absolute-bottom navbar-dark" aria-label="메인 네비게이션">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 footer_ul" style="width: 70%;display: inline-flex;">
-            <li class="nav-item">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">김광석 이야기</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">병천시장</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">김광석길 즐기기</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">갤러리</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">알람.소식</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q&A</font></font></a>
-            </li>
-          </ul>
-          <ul class="navbar-nav me-right mb-2 mb-lg-0 footer_ul">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">개인정보보호정책</font></font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">관리자</font></font></a>
-          </ul>
-        </div>
-      </div>
-      </footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row" style="padding: 20px;">
-                <div class="col-8 col-sm-7" >
-                  ㉿Copryright 2019 Deadong munhwa maeul. Daegu Kr. All rights reserved
+        <div class="sec_1_slider_item sec_1_slider_img" style="background-image: url('image/headerslidebg.jpg')">
+            <div class="sec_1_slider_con_wrapper">
+                <div class="sec_1_slider_title">
+                    제 노래가 힘겨운 삶 속에서<br>
+                    희망을 찾으려는 이들에게<br>
+                    비상구가 되었으면 해요
                 </div>
-                <div class="col-4 col-sm-2">
-                  
+                <div class="sec_1_slider_contents">
+                    -1995년 샘터 9월호 김광석 인터뷰 중에서-
                 </div>
-              </div>
             </div>
-          </div>
-      </div>
-  </body>
+        </div>
+    </div>
+</div>
+<div id="sec_2">
+    <div class="container">
+        <div class="sec_2_wrapper">
+            <div class="sec_2_contents">
+                <div class="sec_2_contents_img"></div>
+                <div class="sec_2_contents_wrapper">
+                    <div class="sec_2_contents_title">알림∙소식</div>
+                    <div class="sec_2_contents_subtitle">2019 대봉문화 마을축제 공연 라인업 및 행사안내</div>
+                    <div class="sec_2_contents_con">
+                        안녕하세요? 10월 25,26일 대봉문화마을축제가
+                        김광석길과 방천시장 일대에서 열립니다.
+                        풍성한 공연과 이벤트가 준비되어있으니
+                        많은 관심 부탁드립니다.
+                    </div>
+                    <ul class="sec_2_contents_list">
+                        <li>대봉문화마을 협의회 긴급 공고문</li>
+                        <li>2019 대봉문화마을축제</li>
+                        <li>김광석길 스탬프 투어 이벤트</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec_2_img_wrapper">
+                <div class="sec_2_img_1"></div>
+                <div class="sec_2_img_2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sec_3">
+    <div class="container">
+        <div class="sec_3_title">About</div>
+        <div class="sec_3_subtitle">그의 음악과 함께 김광석을 다시만나다.</div>
+        <div class="sec_3_item_wrapper">
+            <div class="sec_3_item">
+                <div class="sec_3_item_img" style="background-image: url('image/about04.jpg');">
+                    <div class="sec_3_item_title">사업 내용</div>
+                    <div class="sec_3_item_con">여기에 살아가는 모든 구성원들이 화합하여 상생할 수 있는 전환의 방향을 제시 하는데 그 목적이 있다.</div>
+                </div>
+            </div>
+            <div class="sec_3_item">
+                <div class="sec_3_item_img" style="background-image: url('image/about03.jpg');">
+                    <div class="sec_3_item_title">김광석 다시<br>그리기 길</div>
+                    <div class="sec_3_item_con">김광석 다시 그리기 길은 우리시대의 영원한 가객
+                        김광석 창작의 거리로 다시 태어났다
+                    </div>
+                </div>
+            </div>
+            <div class="sec_3_item">
+                <div class="sec_3_item_img" style="background-image: url('image/about02.jpg');">
+                    <div class="sec_3_item_title">갤러리</div>
+                    <div class="sec_3_item_con">김광석길의 여러가지 최신 정보를
+                        갤러리에서 만나보세요
+                    </div>
+                </div>
+            </div>
+            <div class="sec_3_item">
+                <div class="sec_3_item_img" style="background-image: url('image/about01.jpg');">
+                    <div class="sec_3_item_title">갤러리</div>
+                    <div class="sec_3_item_con">6.25전쟁과 흥망성쇠를
+                        함께한 방천시장
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sec_4">
+    <div id="sec_4_slider">
+        <div class="sec_4_slider_item sec_1_slider_img" style="background-image: url('image/storyslidebg.png')">
+            <div class="sec_4_slider_con_wrapper">
+                <div class="sec_4_slider_title">
+                    Story
+                </div>
+                <div class="sec_4_slider_contents">
+                    그의 음악과 함께 김광석을 다시만나다.
+                </div>
+                <div class="sec_4_slider_img" onclick="location.href='#'"
+                     style="background-image: url('image/story01slide.png')"></div>
+                <div class="sec_4_slider_contents_2">
+                    그의 음악과 함께 김광석을 다시만나다.
+                    <br>
+                    <div class="sec_4_slider_btn">
+                        자세히보기
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec_4_slider_item sec_1_slider_img" style="background-image: url('image/storyslidebg.png')">
+            <div class="sec_4_slider_con_wrapper">
+                <div class="sec_4_slider_title">
+                    Story
+                </div>
+                <div class="sec_4_slider_contents">
+                    그의 음악과 함께 김광석을 다시만나다.
+                </div>
+                <div class="sec_4_slider_img" onclick="location.href='#'"
+                     style="background-image: url('image/story02slide.png')"></div>
+                <div class="sec_4_slider_contents_2">
+                    그의 음악과 함께 김광석을 다시만나다.
+                    <br>
+                    <div class="sec_4_slider_btn">
+                        자세히보기
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sec_5">
+    <div class="container">
+    <div class="sec_5_item" style="background-image: url('image/kgsbt02.jpg')">
+        <div class="sec_5_item_title">
+            거리에 세워진 김광석 동상
+        </div>
+    </div>
+    <div class="sec_5_item" style="background-image: url('image/kgsbt01.jpg')">
+        <div class="sec_5_item_title">
+            거리에 세워진 김광석 동상
+        </div>
+    </div>
+    <div class="sec_5_img"></div>
+
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="footer_cate">
+            <div class="footer_cate_item" onclick="location.href='#'">김광석길 이야기</div>
+            <div class="footer_cate_item" onclick="location.href='#'">방천시장</div>
+            <div class="footer_cate_item" onclick="location.href='#'">김광석거리 즐기기</div>
+            <div class="footer_cate_item" onclick="location.href='#'">갤러리</div>
+            <div class="footer_cate_item" onclick="location.href='#'">알람·소식</div>
+            <div class="footer_cate_item" onclick="location.href='#'">Q&A</div>
+        </div>
+        <div class="footer_admin">
+            <div class="footer_admin_item" onclick="location.href='#'" style="color: #DDA7A4;">개인정보보호정책</div>
+            <div class="footer_admin_item" onclick="location.href='#'">관리자</div>
+        </div>
+        <div class="copyright">
+            ⓒCopyright 2019 Deadong munhwa maeul, Daegu, Kr. All rights reserved.
+        </div>
+    </div>
+</div>
+<div id="gototop"></div>
+
+
+<script>
+    $('#sec_1_slider').slick({
+        nextArrow: '<div class="next_arrow"></div>',
+        prevArrow: '<div class="prev_arrow"></div>',
+    });
+    $('#sec_4_slider').slick({
+        nextArrow: '<div class="next_arrow"></div>',
+        prevArrow: '<div class="prev_arrow"></div>',
+    });
+    $('#gototop').on('click', function (){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+    });
+</script>
+</body>
 </html>
