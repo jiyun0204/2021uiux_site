@@ -13,8 +13,8 @@ my portfolio site
 4. fullpage naver문화재단-renewal https://jiyun0204.github.io/2021uiux_site/20210608_fullpage/index_origin.html
 <a href="https://jiyun0204.github.io/2021uiux_site/20210608_fullpage/index_origin.html"></a>
 
-5. bootstrap1 https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html
-<a href="https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/index.html"></a>
+5. bootstrap1 https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/Renewal_btstrp.html
+<a href="https://jiyun0204.github.io/2021uiux_site/20210531_bootstrap_v3/Renewal_btstrp.html"></a>
 
 6. bootstrap2 김광석-renewal https://jiyun0204.github.io/2021uiux_site/bt_strap_kwangseok/index.html
 <a href="https://jiyun0204.github.io/2021uiux_site/bt_strap_kwangseok/index.html"></a>
